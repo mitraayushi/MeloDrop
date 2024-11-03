@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeloDrop - Song Recommendations with Crypto Rewards</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -65,7 +67,7 @@
                 <input type="text" required placeholder="Get the reward here">
             </div>
             <button type="button" class="hero-btn secondary-btn" onclick="addSongInput()">Add Another Song</button>
-            <button type="submit" class="hero-btn primary-btn">Submit Recommendation</button>
+            <button type="submit" class="hero-btn primary-btn" onclick="withdraw()">Submit Recommendation</button>
         </form>
     </section>
 
